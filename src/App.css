@@ -1,38 +1,74 @@
 .App {
   text-align: center;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+}
+body {
+ background-color: white;
+ box-sizing: border-box;
+ background-image: url("https://image.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1105.jpg");
+ background-repeat: no-repeat;
+ background-size:cover ;
+}
+.title-app{
+  color:  #cc6699  ;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-family: 'Indie Flower', cursive;
+  font-size :3em
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.container-item{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Indie Flower', cursive;
+  margin: 4px auto;
+  color:  #47476b  ;
+  background: linear-gradient(
+    90deg,
+    #e6ccff    0%,
+    #d9b3ff    100%
+  );
+
+}
+.container-item:nth-child(5n + 1) {
+  background: linear-gradient(
+    90deg,
+    #ccffcc    0%,
+    #b3ffb3    100%
+  );
+}
+.container-item:nth-child(5n + 2) {
+  background: linear-gradient(
+    90deg,
+    #cceeff 0%,
+    #b3e6ff 100%
+  );
 }
 
-.App-link {
-  color: #61dafb;
+.container-item:nth-child(5n + 3) {
+  background: linear-gradient(
+    90deg,
+    #ffcccc    0%,
+    #ffb3b3 100%
+  );
+}
+.container-item:nth-child(5n + 4) {
+  background: linear-gradient(
+    90deg,
+    #ffffcc    0%,
+    #ffffb3  100%
+  );
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select{
+  width: 120px;
 }
+
+.done{
+  text-decoration: line-through;
+}
+
+.btn-war, .btn-outline-warning{
+  color: black !important;
+}
+
